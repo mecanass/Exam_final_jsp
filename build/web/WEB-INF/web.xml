@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LoginEtudiantServlet</servlet-name>
+        <servlet-class>servlet.LoginEtudiantServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginProfServlet</servlet-name>
+        <servlet-class>servlet.LoginProfServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertionBlocHorraireEtudiant</servlet-name>
+        <servlet-class>servlet.InsertionBlocHorraireEtudiant</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SupprimerBlock</servlet-name>
+        <servlet-class>servlet.SupprimerBlock</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginEtudiantServlet</servlet-name>
+        <url-pattern>/LoginEtudiantServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginProfServlet</servlet-name>
+        <url-pattern>/LoginProfServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertionBlocHorraireEtudiant</servlet-name>
+        <url-pattern>/InsertionBlocHorraireEtudiant</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SupprimerBlock</servlet-name>
+        <url-pattern>/SupprimerBlock</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
